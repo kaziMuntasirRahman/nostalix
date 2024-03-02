@@ -16,22 +16,42 @@
 </head>
 
 <body>
-  <header class="px-[135px] py-[55px] border border-black">
+  <header class="px-[135px] py-[55px]">
     <nav class="flex gap-6 items-center">
       <h1 class="mr-auto text-center text-slate-900 text-4xl font-black font-['Mulish']">Nostali<span>X</span></h1>
       <div id="nav-link-container" class="flex gap-3">
       </div>
       <div class="px-10 py-4 bg-indigo-400 rounded-full flex items-center gap-2">
-        <div class="text-center text-white text-xl font-bold font-['Mulish']">Sign In</div>
+        <button class="text-center text-white text-xl font-bold font-['Mulish']">Sign In</button>
       </div>
     </nav>
-    <section class="banner">
-      
+    <section class="w-full bg-slate-900 rounded-[32px] bg-cover my-[50px]"
+      style="background-image: url('images/bgbanner.png')">
+      <div id="banner-content" class="p-[100px] z-10 flex justify-between items-center">
+        <div class="left flex flex-col gap-5">
+          <h1 class="w-[633px]"><span class="text-white text-[64px] font-black font-['Mulish'] leading-[86px]">Welcome
+              to the </span><span
+              class="text-indigo-400 text-[64px] font-black font-['Mulish'] leading-[86px]">NostaliX</span><span
+              class="text-white text-[64px] font-black font-['Mulish'] leading-[86px]"> Forum</span></h1>
+          <p class="w-[455px] text-white text-opacity-80 text-xl font-medium font-['Mulish'] leading-9">Share your
+            favorite opinion and win and wp forum coffee mug!</p>
+          <label class="input input-bordered flex items-center gap-2 rounded-full p-[6px] max-w-min mt-3">
+            <input type="text" class="grow ml-4" placeholder="Search Here" />
+            <button class="badge badge-info px-[27px] h-full text-white bg-indigo-400">
+              <h4 class="text-xl font-bold font-['Mulish']">Search</h4>
+            </button>
+          </label>
+        </div>
+        <div id="right" class="">
+
+        </div>
+      </div>
     </section>
   </header>
   <main></main>
   <footer></footer>
   <script src="js/nav-style.js"></script>
+  <script src="js/banner-stat.js"></script>
 </body>
 
 </html>

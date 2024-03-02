@@ -1,0 +1,13 @@
+const bannerStat = [{field:'Registered User', number:1},{field:'Forum', number:1},{field:'Topics', number:5},{field:'Replies', number:1}];
+
+const bannerRight = document.getElementById('right');
+bannerRight.classList += 'flex flex-col p-12 bg-white gap-6 rounded-3xl'
+
+for(const i of bannerStat){
+  bannerRight.innerHTML += `
+  <div class='flex justify-between gap-14'>
+  <p class="text-slate-900 text-opacity-80 text-2xl font-medium font-['Mulish']">${i.field}</p>
+  <p class="text-slate-900 text-opacity-80 text-2xl font-medium font-['Mulish']">0${i.number}</p>
+  </div>
+  `
+}
