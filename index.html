@@ -1,15 +1,34 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link href="https://cdn.jsdelivr.net/npm/daisyui@4.7.2/dist/full.min.css" rel="stylesheet" type="text/css" />
   <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
   <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:slnt,wght@-10..0,100..900&family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+    rel="stylesheet">
   <title>Nostalix</title>
 </head>
+
 <body>
-  <h1>Nostalix</h1>
+  <header class="px-[135px] py-[55px] border border-black">
+    <nav class="flex gap-6 items-center">
+      <h1 class="mr-auto text-center text-slate-900 text-4xl font-black font-['Mulish']">Nostali<span>X</span></h1>
+      <div id="nav-link-container" class="flex gap-3">
+      </div>
+      <div class="px-10 py-4 bg-indigo-400 rounded-full flex items-center gap-2">
+        <div class="text-center text-white text-xl font-bold font-['Mulish']">Sign In</div>
+      </div>
+    </nav>
+  </header>
+  <main></main>
+  <footer></footer>
+  <script src="js/nav-style.js"></script>
 </body>
 
 </html>
