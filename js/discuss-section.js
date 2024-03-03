@@ -16,10 +16,9 @@ function displayArticle(ara){
     <div id=${obj.id}
 class="bg-zinc-100 rounded-3xl p-10 flex gap-6 items-start border-[1px] border-white hover:border-[1px] hover:border-violet-500 hover:bg-violet-100">
 <!-- avatar -->
-<div class="avatar ${(obj.isActive)?"online":"offline"}">
-  <div class="w-24 rounded-2xl">
-    <img src="${obj.image}" />
-  </div>
+<div class="size-[72px]  relative">
+  <img src="${obj.image}" class="rounded-2xl"/>
+  <div class="size-5 ${(obj.isActive)?"bg-emerald-500":"bg-red-500"}  rounded-full border-2 border-white absolute -top-2 -right-2"></div>
 </div>
 <!-- text-section -->
 <div class="w-full flex flex-col gap-3">
