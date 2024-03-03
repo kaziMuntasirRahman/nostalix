@@ -5,7 +5,7 @@ bannerRight.classList += 'flex flex-col p-12 bg-white gap-6 rounded-3xl'
 
 for(const i of bannerStat){
   bannerRight.innerHTML += `
-  <div class='flex justify-between gap-14'>
+  <div class='flex justify-between min-w-[275px]'>
   <p class="text-slate-900 text-opacity-80 text-2xl font-medium font-['Mulish']">${i.field}</p>
   <p class="text-slate-900 text-opacity-80 text-2xl font-medium font-['Mulish']">0${i.number}</p>
   </div>
