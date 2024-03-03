@@ -26,7 +26,7 @@ class="bg-zinc-100 rounded-3xl p-10 flex gap-6 items-start border-[1px] border-w
     <p class="text-slate-900 text-opacity-80 text-sm font-medium font-['Inter']"># ${obj.category}</p>
     <p class="text-slate-900 text-opacity-80 text-sm font-medium font-['Inter']">Author : ${obj.author.name}</p>
   </div>
-  <h2 class="text-slate-900 text-xl font-bold font-['Mulish']mb-1">${obj.title}</h2>
+  <h2 class="titl text-slate-900 text-xl font-bold font-['Mulish']mb-1">${obj.title}</h2>
   <p
     class="text-slate-900 text-opacity-60 text-base font-normal font-['Inter'] leading-relaxed">${obj.description}</p>
   <div class="w-full h-[0px] border border-dashed border-slate-900 border-opacity-25 my-2"></div>
@@ -34,11 +34,11 @@ class="bg-zinc-100 rounded-3xl p-10 flex gap-6 items-start border-[1px] border-w
     <div class="flex gap-6 items-center mr-auto">
       <div class="msg flex items-center gap-3">
         <img src="images/icons/message.png" alt="">
-        <div class="text-slate-900 text-opacity-60 text-base font-normal font-['Inter']">${obj.comment_count}</div>
+        <div class="cmt text-slate-900 text-opacity-60 text-base font-normal font-['Inter']">${obj.comment_count}</div>
       </div>
-      <div class="view flex items-center gap-3">
+      <div class="flex items-center gap-3">
         <img src="images/icons/view.png" alt="">
-        <div class="text-slate-900 text-opacity-60 text-base font-normal font-['Inter']">${obj.view_count}</div>
+        <div class="viw text-slate-900 text-opacity-60 text-base font-normal font-['Inter']">${obj.view_count}</div>
       </div>
       <div class="clock flex items-center gap-3">
         <img src="images/icons/clock.png" alt="">

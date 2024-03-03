@@ -3,8 +3,8 @@ let msgReadCounter = 0;
 
 
 function addComment(img){
-  const authorTitle = img.parentElement.parentElement.children[1].innerHTML;
-  const authorView = img.parentElement.parentElement.children[4].children[0].children[1].children[1].innerHTML;
+  const authorTitle = img.parentElement.parentElement.querySelector('.titl').innerHTML;
+  const authorView = img.parentElement.parentElement.querySelector('.viw').innerHTML;
   msgReadCounter++;
   document.getElementById('msg-read-counter').innerHTML = msgReadCounter;
   commentContainer.innerHTML += `
