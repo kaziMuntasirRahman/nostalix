@@ -60,8 +60,10 @@
         can run unit tests and view the results directly within the app. The integrated testing features allow for a
         streamlined .</p>
     </section>
+    <!-- article + comment container section start -->
     <section class="flex flex-col lg:flex-row gap-6 justify-between items-start">
-      <div id="article-container" class="lg:w-[772px] flex flex-col gap-6 bg-red-400">
+      <!-- article container -->
+      <div id="article-container" class="lg:w-[772px] flex flex-col gap-6">
         <div id="article"
           class="bg-zinc-100 rounded-3xl p-10 flex gap-6 items-start border-[1px] border-white hover:border-[1px] hover:border-violet-500 hover:bg-violet-100">
           <div class="avatar online">
@@ -100,6 +102,7 @@
           </div>
         </div>
       </div>
+      <!-- comment container -->
       <div id="comment-container"
         class="flex flex-col gap-4 mx-auto lg:m-0 p-6 w-9/12 lg:w-[374px] bg-slate-900 bg-opacity-5 rounded-3xl">
         <div class="flex items-start justify-between">
@@ -120,7 +123,20 @@
       </div>
     </section>
   </main>
-  <footer></footer>
+  <footer class="flex flex-col items-center gap-4 px-10 py-10 lg:px-[135px] lg:py-[100px] w-full bg-[#12132D0D]">
+    <h1 class="text-center text-slate-900 text-4xl font-black font-['Mulish']">NostaliX</h1>
+    <div class="w-[604px] text-center text-slate-900 text-opacity-70 text-base font-normal font-['Mulish'] leading-7">In
+      opposition to common belief, Placeholder Text is not merely arbitrary content. It traces its origins to a segment
+      of classical Latin literature dating back to 45 BC.</div>
+    <div class="icon-container mt-4 flex gap-8">
+      <img src="images/icons/twitter.png" alt="">
+      <img src="images/icons/fb.png" alt="">
+      <img src="images/icons/instagram.png" alt="">
+      <img src="images/icons/github.png" alt="">
+    </div>
+    <div class="w-full h-[0px] border border-slate-700 border-opacity-10 lg:my-8"></div>
+    <div class="text-slate-900 text-opacity-50 text-base font-light font-['Mulish']">2024, All Rights Reserved.</div>
+  </footer>
   <script src="js/nav-style.js"></script>
   <script src="js/banner-stat.js"></script>
 </body>
