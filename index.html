@@ -18,9 +18,10 @@
 <body>
   <header class="px-4 py-6 lg:px-[135px] lg:py-[55px]">
     <nav class="flex gap-6 items-center">
-      <a href="https://nostalix.netlify.app/" class="mr-auto text-center text-slate-900 text-3xl lg:text-4xl font-black font-['Mulish']">
+      <a href="https://nostalix.netlify.app/"
+        class="mr-auto text-center text-slate-900 text-3xl lg:text-4xl font-black font-['Mulish']">
         NostaliX</a>
-        <!-- nav link section -->
+      <!-- nav link section -->
       <div id="nav-link-container" class="">
         <!-- this section is in the js -->
       </div>
@@ -39,10 +40,12 @@
             class="text-white text-5xl lg:text-[64px] font-black font-['Mulish'] leading-[64px] lg:leading-[86px]">
             Forum</span></h1>
         <p
-          class="w-full px-4 lg:px-0 lg:w-[500px] text-center lg:text-start text-white text-opacity-80 text-xl font-medium font-['Mulish'] leading-9">Share your most valued opinion and stand a chance to win an exclusive WP Forum coffee mug!</p>
+          class="w-full px-4 lg:px-0 lg:w-[500px] text-center lg:text-start text-white text-opacity-80 text-xl font-medium font-['Mulish'] leading-9">
+          Share your most valued opinion and stand a chance to win an exclusive WP Forum coffee mug!</p>
         <label class="input input-bordered flex items-center gap-2 rounded-full p-1 lg:max-w-min mt-3">
           <input id="search-field" type="text" class="grow ml-4" placeholder="Search Here . . . ." />
-          <button onclick="searching()" class="badge badge-info px-[27px] h-full text-white bg-indigo-400 text-xl font-bold font-['Mulish']">
+          <button onclick="searching()"
+            class="badge badge-info px-[27px] h-full text-white bg-indigo-400 text-xl font-bold font-['Mulish']">
             Search
           </button>
         </label>
@@ -56,7 +59,9 @@
     <section id="discuss" class="flex flex-col items-center gap-3 lg:gap-6">
       <h1 class="text-center text-slate-900 text-[40px] font-black font-['Mulish']">Let’s Discuss</h1>
       <p
-        class="px-20 lg:px-[240px] text-center text-slate-900 text-opacity-60 text-lg font-normal font-['Inter'] leading-[30px]">Certainly! You have the capability to execute unit tests seamlessly and observe the results directly within the app, thanks to the integrated testing features that enhance efficiency and simplicity.</p>
+        class="px-20 lg:px-[240px] text-center text-slate-900 text-opacity-60 text-lg font-normal font-['Inter'] leading-[30px]">
+        Certainly! You have the capability to execute unit tests seamlessly and observe the results directly within the
+        app, thanks to the integrated testing features that enhance efficiency and simplicity.</p>
     </section>
     <!-- article + comment container section start -->
     <section class="flex flex-col lg:flex-row gap-6 justify-between  items-start">
@@ -99,7 +104,9 @@
     <section class="flex flex-col items-center gap-6">
       <h1 class="text-center text-slate-900 text-[40px] font-black font-['Mulish']">Latest Posts</h1>
       <p
-        class="w-3/4 lg:w-[691px] text-center text-slate-900 text-opacity-60 text-lg font-normal font-['Inter'] leading-[30px]">Absolutely! You can effortlessly run unit tests and directly view the results within the app. The integrated testing features ensure a streamlined and efficient testing process.</p>
+        class="w-3/4 lg:w-[691px] text-center text-slate-900 text-opacity-60 text-lg font-normal font-['Inter'] leading-[30px]">
+        Absolutely! You can effortlessly run unit tests and directly view the results within the app. The integrated
+        testing features ensure a streamlined and efficient testing process.</p>
       <!-- latest posts cart container  -->
       <div id="latest-post-cart-container" class="grid grid-cols-1 lg:grid-cols-3 gap-6">
         <!-- latest posts cart  -->
@@ -124,6 +131,12 @@
     <div class="w-full h-[0px] border border-slate-700 border-opacity-10 lg:my-8"></div>
     <div class="text-slate-900 text-opacity-50 text-base font-light font-['Mulish']">2024, All Rights Reserved.</div>
   </footer>
+
+  <div  id="loadingSpinner" class="h-screen w-full hidden top-0 left-0 bg-blue-50 bg-opacity-60">
+    <div class="h-screen w-full relative ">
+      <span class="loading loading-spinner bg-red-600 loading-lg absolute left-[50%] top-[50%] "></span>
+    </div>
+  </div>
   <script src="js/nav-style.js"></script>
   <script src="js/banner-stat.js"></script>
   <script src="js/discuss-section.js"></script>

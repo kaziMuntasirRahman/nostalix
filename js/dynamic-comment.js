@@ -13,5 +13,5 @@ function addComment(img){
   <img src="images/icons/view.png" class=""></img>
   <div class="text-slate-900 text-opacity-60 font-['Inter']">${authorView}</div>
 </div>`
-img.classList.add('pointer-events-none', 'opacity-20');
+// img.classList.add('pointer-events-none', 'opacity-20');
 }
