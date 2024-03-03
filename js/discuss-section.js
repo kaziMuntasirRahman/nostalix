@@ -13,7 +13,7 @@ function displayArticle(ara){
   articleContainer.innerHTML = '';
   for(const obj of ara){
     articleContainer.innerHTML += `
-    <div
+    <div id=${obj.id}
 class="bg-zinc-100 rounded-3xl p-10 flex gap-6 items-start border-[1px] border-white hover:border-[1px] hover:border-violet-500 hover:bg-violet-100">
 <!-- avatar -->
 <div class="avatar ${(obj.isActive)?"online":"offline"}">
@@ -46,7 +46,7 @@ class="bg-zinc-100 rounded-3xl p-10 flex gap-6 items-start border-[1px] border-w
         <div class="text-slate-900 text-opacity-60 text-base font-normal font-['Inter']">${obj.posted_time} min</div>
       </div>
     </div>
-    <img src="images/icons/inbox.png" alt="" class="cursor-pointer">
+    <img src="images/icons/inbox.png" onclick="addComment(this)" class="cursor-pointer">
   </div>
 </div>
 </div>
