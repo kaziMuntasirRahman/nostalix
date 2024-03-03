@@ -2,12 +2,15 @@ const articleContainer = document.getElementById('article-container');
 const articleUrl = `https://openapi.programming-hero.com/api/retro-forum/posts`;
 
 
-fetch(articleUrl)
+function deployFetchData(url){
+  fetch(url)
   .then(response => response.json())
   .then(json => displayArticle(json.posts))
+}
 
 
 function displayArticle(ara){
+  articleContainer.innerHTML = '';
   for(const obj of ara){
     articleContainer.innerHTML += `
     <div
@@ -51,5 +54,7 @@ class="bg-zinc-100 rounded-3xl p-10 flex gap-6 items-start border-[1px] border-w
   }
 }
 
+
+deployFetchData(articleUrl);
 
 
