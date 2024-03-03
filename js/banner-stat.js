@@ -1,7 +1,7 @@
 const bannerStat = [{field:'Registered User', number:1},{field:'Forum', number:1},{field:'Topics', number:5},{field:'Replies', number:1}];
 
 const bannerRight = document.getElementById('right');
-bannerRight.classList += 'flex flex-col p-12 bg-white gap-6 rounded-3xl'
+bannerRight.classList += 'w-full lg:max-w-min flex flex-col p-12 bg-white gap-6 rounded-3xl'
 
 for(const i of bannerStat){
   bannerRight.innerHTML += `
