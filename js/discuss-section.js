@@ -8,6 +8,8 @@ function deployFetchData(url){
   .then(json => displayArticle(json.posts))
 }
 
+let isRead = false;
+
 
 function displayArticle(ara){
   articleContainer.innerHTML = '';
@@ -45,7 +47,9 @@ class="bg-zinc-100 rounded-3xl p-10 flex gap-6 items-start border-[1px] border-w
         <div class="text-slate-900 text-opacity-60 text-base font-normal font-['Inter']">${obj.posted_time} min</div>
       </div>
     </div>
-    <img src="images/icons/inbox.png" onclick="addComment(this)" class="cursor-pointer">
+    <img
+    src="images/icons/inbox-close.png"
+    onclick="addComment(this)" class="cursor-pointer size-7 object-cover">
   </div>
 </div>
 </div>

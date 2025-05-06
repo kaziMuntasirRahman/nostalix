@@ -2,9 +2,9 @@ const commentContainer = document.getElementById('comment-container');
 let msgReadCounter = 0;
 
 
-function addComment(img){
-  const authorTitle = img.parentElement.parentElement.querySelector('.titl').innerHTML;
-  const authorView = img.parentElement.parentElement.querySelector('.viw').innerHTML;
+function addComment(blog){
+  const authorTitle = blog.parentElement.parentElement.querySelector('.titl').innerHTML;
+  const authorView = blog.parentElement.parentElement.querySelector('.viw').innerHTML;
   msgReadCounter++;
   document.getElementById('msg-read-counter').innerHTML = msgReadCounter;
   commentContainer.innerHTML += `

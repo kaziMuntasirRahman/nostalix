@@ -12,7 +12,7 @@ function displayLatestPost(array) {
   for (const obj of array) {
     latestPostCartContainer.innerHTML += `<div
   class="bg-white rounded-3xl border border-slate-900 border-opacity-20 p-6 mt-6  flex flex-col gap-3">
-  <img src="${obj.cover_image}" class="w-full h-[190px] bg-slate-900 bg-opacity-5 rounded-[20px]">
+  <img src="${obj.cover_image}" class="w-full h-[200px] bg-slate-900 bg-opacity-5 rounded-[20px] object-cover">
   <!-- date section -->
   <div class="flex gap-2 mb-1 mt-3">
     <img src="images/icons/calendar.png" alt="">
